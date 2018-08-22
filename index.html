@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Ingreso solo números Input Jquery</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+</head>
+
+<body>
+<input id="valor" name="valor" type="number" class="form-control">
+<script>
+$('#valor').on('input', function () { 
+	this.value = this.value.replace(/[^0-9]/g,'');
+});
+</script>
+</body>
+</html>			
